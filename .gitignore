@@ -1,10 +1,7 @@
 #gitignore CPP
 
-
-*.vs
 /Programmer en Cpp/.vs
 /Programmer en Cpp/Debug
 /Programmer en Cpp/Programmer en Cpp/Debug
 
-*.sln
 
