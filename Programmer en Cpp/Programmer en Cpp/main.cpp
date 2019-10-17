@@ -1,41 +1,28 @@
 #include <iostream>
-#include <cmath>
+//#include <cmath>
 #include <cstdlib>
+#include "CPoint.h"
 
-using namespace std;
+//using namespace std;
 
 //Exemple de programme en C ++
-
+//POO C++
+//Class (données et méthodes)
 
 
 int main()
 {
-	int i = 0;
-	float x = 0.0;
-	float racx = 0.0;
+	CPoint ptMonPoint;
 
-	const int NFOIS = 5;
+	ptMonPoint.getX();
+	ptMonPoint.getY();
 
-	cout << "Je vais vous calculer " << NFOIS << " racines carrees\n";
+	ptMonPoint.setX(0);
+	ptMonPoint.setY(0);
 
-	for (i = 0; i < NFOIS; i++) {
-
-		cout << "Donnez un nombre : ";
-		cin >> x;
-
-
-		if (x < 0.0)
-
-			cout << "Le nombre	" << x << " ne possede pas de racine carree\n";
-		else {
-			racx = sqrtf(x);
-			cout << "Le nombre " << x << "a  pour racine carree" << racx << endl;
-		}
-	}
-
-	cout << "Travail Termine" << endl;
+	std::cout << "X : " << ptMonPoint.getX() << std::endl;
+	std::cout << "Y : " << ptMonPoint.getY() << std::endl;
 
 	system("pause");
-
 	return 0;
 }
